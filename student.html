@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="avm.jpg" type="image/jpg">
+    <title>Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500&family=Monoton&display=swap" rel="stylesheet">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+/* for image slider *****begining******      */
+body,
+            #slider,
+            .wrap,
+            .slide-content {
+              margin: 0;
+              padding: 0;
+              font-family: Arial, Helvetica, sans-serif;
+              width: 100%;
+              height: 100vh;
+              overflow-x: hidden;
+            }
+            
+            .wrap {
+              position: relative;
+            }
+            
+            .slide {
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+            
+            .slide1 {
+              background-image: url("https://scontent.fknu1-1.fna.fbcdn.net/v/t31.0-8/p720x720/16143727_324398947960993_3327585327112164045_o.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_ohc=ezawsvM24QUAX-MJYr_&_nc_ht=scontent.fknu1-1.fna&_nc_tp=6&oh=95fac5307bc1c4681b3587db83b10f36&oe=5F326530")
+            }
+            .slide2 {
+              background-image: url("https://scontent.fknu1-1.fna.fbcdn.net/v/t31.0-8/s960x960/16177658_324399391294282_4488333493418865504_o.jpg?_nc_cat=104&_nc_sid=8024bb&_nc_ohc=-fS0LkrsqsYAX-dg9gY&_nc_ht=scontent.fknu1-1.fna&_nc_tp=7&oh=c5dcb6c7f262ddc5f7030c99329aea57&oe=5F31F2F4");
+            }
+            .slide3 {
+              background-image: url("https://scontent.fknu1-1.fna.fbcdn.net/v/t31.0-8/p720x720/16112743_324398897960998_8465607207175725403_o.jpg?_nc_cat=102&_nc_sid=8024bb&_nc_ohc=BblLJh7qd8QAX_pxHTk&_nc_ht=scontent.fknu1-1.fna&_nc_tp=6&oh=f89f71ecf3d6c6b77bac0dfcaf4ea4f0&oe=5F2FAE8C");
+              }
+              
+              .slide4 {
+              background-image: url("https://scontent.fknu1-1.fna.fbcdn.net/v/t31.0-0/p180x540/15994792_324398844627670_3454339092691398271_o.jpg?_nc_cat=106&_nc_sid=8024bb&_nc_ohc=Os0rh3SmSM4AX8YMwoX&_nc_ht=scontent.fknu1-1.fna&_nc_tp=6&oh=c04ea6fa64b368494e0ff87b072b98e5&oe=5F32001D");
+              }
+              .slide5 {
+              background-image: url("https://scontent.fknu1-1.fna.fbcdn.net/v/t1.0-9/39389299_1536287003143335_6655538990407483392_n.jpg?_nc_cat=105&_nc_sid=110474&_nc_ohc=4prJDl-Zg3oAX9hcXYq&_nc_ht=scontent.fknu1-1.fna&oh=2c8613443380711e4daa5e5d3b74a015&oe=5F326117");
+              }
+              .slide6 {
+              background-image: url("https://scontent.fknu1-1.fna.fbcdn.net/v/t31.0-8/p720x720/17310284_358174894583398_2482495517759781794_o.jpg?_nc_cat=106&_nc_sid=2d5d41&_nc_ohc=gX1ktc7qXkcAX8k35SI&_nc_ht=scontent.fknu1-1.fna&_nc_tp=6&oh=f0542f26de9088c6702fd53c876edccf&oe=5F304F20");
+              }
+              .slide7 {
+              background-image:url("https://scontent.fknu1-1.fna.fbcdn.net/v/t31.0-8/s960x960/17016746_348581172209437_4703925646475318750_o.jpg?_nc_cat=110&_nc_sid=8024bb&_nc_ohc=x6tNUE4kevkAX_9JgVu&_nc_ht=scontent.fknu1-1.fna&_nc_tp=7&oh=0948b16bb2e4175d13a7412aaaea2d5b&oe=5F314F70");
+              }
+              .slide8 {
+              background-image: url("https://scontent.fknu1-1.fna.fbcdn.net/v/t1.0-9/16998854_348581035542784_3086924355280904658_n.jpg?_nc_cat=111&_nc_sid=8024bb&_nc_ohc=dn8ZIyrv0m4AX_PWr04&_nc_ht=scontent.fknu1-1.fna&oh=392b166b2735b973967d824dfbb8f5b3&oe=5F30F13F");
+              }
+              .slide9 {
+              background-image: url("https://scontent.fknu1-1.fna.fbcdn.net/v/t31.0-0/p180x540/16797060_344841015916786_1941056264392200949_o.jpg?_nc_cat=108&_nc_sid=2d5d41&_nc_ohc=HcKr5Q1FI0EAX8ZUdXd&_nc_ht=scontent.fknu1-1.fna&_nc_tp=6&oh=57e66ff27ff799b608395aec17c8364d&oe=5F3126E3");
+              }
+              .slide10 {
+              background-image: url("https://scontent.fknu1-1.fna.fbcdn.net/v/t31.0-8/s960x960/15994560_324399454627609_6467016278752498876_o.jpg?_nc_cat=101&_nc_sid=8024bb&_nc_ohc=bl8bsRXvsU8AX8ruZ6D&_nc_ht=scontent.fknu1-1.fna&_nc_tp=7&oh=b8a85044d64eebcbf644ab567cf26f87&oe=5F31CD75");
+              }
+              .slide11 {
+              background-image: url("https://scontent.fknu1-1.fna.fbcdn.net/v/t31.0-8/s960x960/16143381_324399281294293_2583193257551279143_o.jpg?_nc_cat=106&_nc_sid=8024bb&_nc_ohc=MWtBCjQWDZoAX9-oDXq&_nc_ht=scontent.fknu1-1.fna&_nc_tp=7&oh=f6fa711879dda1bf60cfab3093d5172d&oe=5F325E8B");
+              }
+              .slide12 {
+              background-image: url("https://scontent.fknu1-1.fna.fbcdn.net/v/t31.0-8/p720x720/17390564_358174487916772_7811099823767083902_o.jpg?_nc_cat=111&_nc_sid=2d5d41&_nc_ohc=4-IANxr9kxMAX_YprNV&_nc_ht=scontent.fknu1-1.fna&_nc_tp=6&oh=80491e98fcc9ea6cbbff32373ef38209&oe=5F310A73");
+              }
+              .slide13 {
+              background-image: url("https://scontent.fknu1-1.fna.fbcdn.net/v/t31.0-8/p720x720/16113069_324398854627669_2162644126891145249_o.jpg?_nc_cat=107&_nc_sid=8024bb&_nc_ohc=f-yOn0S5st8AX_WASmy&_nc_ht=scontent.fknu1-1.fna&_nc_tp=6&oh=5c407a862df496068cc5bf1d0c9a05f4&oe=5F320DC2");
+              }
+            .slide-content {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+            
+            .slide-content span {
+              font-size: 30px;
+              color: grey;
+            }
+            
+            .arrow {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              margin-top: -35px;
+              width: 0;
+              height: 0;
+              border-style: solid;
+            }
+            
+            #arrow-left {
+              border-width: 30px 40px 30px 0;
+              border-color: transparent grey transparent transparent;
+              left: 0;
+              margin-left: 30px;
+            }
+            
+            #arrow-right {
+              border-width: 30px 0 30px 40px;
+              border-color: transparent transparent transparent grey ;
+              right: 0;
+              margin-right: 30px;
+            }
+
+/* for image slider *****ending******      */
+
+
+
+
+
+        .students{
+            padding-left: 85px;
+            /* padding-top: 70px; */
+            color: white;
+            text-shadow: 40px -18px 7px white;
+            
+            font-family: 'Baloo Chettan 2' , 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* text-shadow: 4px 3px 5px grey; */
+            font-size: 40px;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+        .background{
+            background-color: #2662ad ;
+        }
+        @keyframes example{
+            0%{color: transparent; }
+            20%{color:#2662ad;
+                text-shadow: 5px -3px 1px white;}
+               
+            100%{color:white;
+                text-shadow: 40px -18px 7px white;}
+        }
+        /* @keyframes relatives{
+            form{color:transparent;}
+            from{color:currentColor;}
+        
+        } */
+           
+        
+        .logo{
+            /* animation-name: relatives; */
+            /* animation-duration: 4s; */
+            /* border: 1px solid white; */
+            border-radius: 34px;
+            padding-top: 20px;
+            padding-left: 7px;
+            align-items: center;
+            
+            /* text-align: center; */
+            justify-items: center;
+            /* display: flex; */
+        }
+        .fade-in{
+            opacity: 0;
+            transition: opacity 250ms ease-in;
+        }
+        .fade-in.appear{
+            opacity: 1;
+        }
+        .principal-d{
+            color: black;
+            text-align: center;
+            justify-content: center;
+            font-size: 30px;
+            padding-top: 100px;
+            padding-bottom: 30px;
+            font-family:' -apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .border{
+            
+           
+            /* border: 2px solid purple; */
+            border:4px solid #d0c9c9 ;
+            background-color: #d0c9c9;
+            /* border-radius: 1px; */
+            height: 2000px;
+            
+        }
+        .home{
+            height: 30px;
+            width: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            padding-left:300px;
+            padding-top: 20px;
+        }
+        .home:hover{
+            background-color: tomato;
+            cursor: pointer;
+
+        }
+        .principal{
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           margin-top: 100px;
+           border: 2px solid black;
+           border-radius: 50%;
+        }
+        .name{
+            text-align: center;
+            justify-content: center;
+            font-size: 15px;
+            
+        }
+        .toppers{
+            text-align: center;
+            justify-content: center;
+            color: gold;
+            padding-top: 30px;
+            text-shadow:2px 2px 2px grey;
+        }
+        .toppers-name{
+            border: 2px solid goldenrod;
+            height: 3000px;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: goldenrod;
+
+        }
+        .line{
+            border-top:5px solid indigo;
+            width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            padding-bottom: 50px;
+
+        }   
+        .footer{
+            padding-top: 70px;
+            padding-bottom: 40px;
+            background-color: black;
+        }
+        .my-name{
+            text-align: center;
+            justify-content: center;
+            color: white;
+            font-size: 15px;
+        }
+        .gmail3{
+            padding-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 20px;
+            width: 20px;
+        }
+        .request{
+            text-align: center;
+            justify-content: center;
+        }
+        /* .photo{
+            
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .contact-us{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+color:black;
+box-shadow: 0px 12px 75px black;
+}
+.center{
+text-align: center;
+padding-bottom: 40px;
+
+}
+.phone{
+    height: 30px;padding: 8px;
+
+}
+.gmail{
+    height: 30px;padding: 8px;
+}
+.facebook{
+    height: 30px;padding: 8px;
+
+}
+.phone:hover{
+cursor: pointer;
+color: orangered;
+}
+.gmail:hover{
+   cursor: pointer;
+   color: orangered;
+}
+.facebook:hover{
+    cursor: pointer;
+    color: orangered;
+}
+.phone-2{
+    display:flex;
+     max-width:1304px ;
+
+}
+.phone-3{
+    height: 20px;
+    
+}
+.phone-4{
+    color:#44251b;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* .footer{
+    background-color: black;
+    
+} */
+/* .my-name{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+} */
+.gmail-2{
+    height: 10px;
+}
+
+
+
+
+
+
+.council{
+  text-align: center;
+  justify-content: center;
+  font-size: 40px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color:lightseagreen;
+
+}
+.border2{
+  border: 2px solid rgb(251, 194, 222) ;
+  
+  height: 300px;
+  width: 300px;
+  margin-left: auto;
+  margin-right:auto ;
+  background-color: rgb(251, 194, 222);
+  
+}
+.tn{
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.priyanka{
+  margin-top: 100px;
+}
+.mishra{
+  margin-top: 100px;
+}
+.thoughts{
+  /* font-family: 'Caveat', cursive; */
+/* font-family: 'La Belle Aurore', cursive;
+ */
+ font-family: "-apple-system", BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 30px;
+  color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 70px;
+  font-weight: lighter;
+  word-spacing:10px;
+}
+
+
+
+
+/* media query fire */
+
+@media only screen and (max-width:912px){
+  .border{
+            
+           
+            /* border: 2px solid purple; */
+            border:4px solid #d0c9c9 ;
+            background-color: #d0c9c9;
+            /* border-radius: 1px; */
+            height: 3000px;
+            
+        }
+}
+@media only screen and (max-width:598px){
+  .border{
+            
+           
+            /* border: 2px solid purple; */
+            border:4px solid #d0c9c9 ;
+            background-color: #d0c9c9;
+            /* border-radius: 1px; */
+            height: 4000px;
+            
+        }
+
+      }
+      @media only screen and (max-width:454px){
+  .border{
+            
+           
+            /* border: 2px solid purple; */
+            border:4px solid #d0c9c9 ;
+            background-color: #d0c9c9;
+            /* border-radius: 1px; */
+            height: 5000px;
+            
+        }
+
+      }
+      @media only screen and (max-width:375px){
+  .border{
+            
+           
+            /* border: 2px solid purple; */
+            border:4px solid #d0c9c9 ;
+            background-color: #d0c9c9;
+            /* border-radius: 1px; */
+            height: 6000px;
+            
+        }
+
+      }
+      @media only screen and (max-width:333px){
+  .border{
+            
+           
+            /* border: 2px solid purple; */
+            border:4px solid #d0c9c9 ;
+            background-color: #d0c9c9;
+            /* border-radius: 1px; */
+            height: 6200px;
+            
+        }
+
+
+
+
+
+      }
+
+
+      @media only screen and (max-width:450px){
+        .table{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        /* .anchor{
+            padding-top: 20px;
+        } */
+        .list{
+            padding-top: 20px;
+    
+        }
+    }
+  
+        figcaption{
+            text-align: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-top: 10px;
+            color:black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+
+
+
+        .logo{
+            width: 70px;
+            height: 70px;
+            margin: auto;
+            margin-left: 40px;
+        }
+        .anchor{
+            text-decoration: none;
+            margin-right:10px ;
+            padding-left: 5px;
+            padding-right: 5px;
+            color:white;
+            font-family: "Baloo Bhai","-apple-system", "BlinkMacSystemFont", 'Segoe UI', "Roboto"," Oxygen"," Ubuntu"," Cantarell", 'Open Sans', 'Helvetica Neue', sans-serif;
+            border: 2px solid white;
+             border-radius:20px ;
+        }
+        .anchor:hover{
+            background-color: coral;
+            color: white;
+        }
+        .logo-2{
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            border-radius: 34px;
+            height: 70px;
+            width: 70px;
+        }
+
+        .quali{
+    text-align: center;
+    justify-content: center;
+    color:rgb(44, 44, 44);
+    font-family: "-apple-system", BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.photo{
+  margin-right: 112px;
+  margin-left: 112px;
+}
+.align{
+  margin-left: auto;
+  margin-right:auto;
+  display: block;
+  
+}
+
+
+         </style>
+</head>
+<body>
+    <div class="background fade-scroll">
+      <figure>
+
+        <img src="avm-logo.jpg" alt="logo" class="logo-2">
+        <figcaption>
+           Adarsh Vidya Mandir
+            
+        </figcaption>
+        
+    </figure>
+    <nav class="nav">
+
+        <ul class="table" style="    list-style-type:none; display: flex;">
+
+            <li class="list">
+ 
+                <a href="index.html" class="anchor">Home</a>
+            </li>
+            <li class="list">
+                <a href="http://www.nbgei.org/#" class="anchor">About Us</a>
+            </li>
+             <li class="list">
+                 <a href="student.html" class="anchor">Student's Pannel</a>
+             </li>
+             <li class="list">
+                 <a href="gallery.html" class="anchor">
+                    Gallery
+                 </a>
+             </li>
+
+        </ul>
+    </nav>
+          <h2 class="students" >Student's pannel</h2>
+
+        
+</div>
+<!-- this is for image slider -->
+<div class="wrap fade-scroll">
+    <div id="arrow-left" class="arrow"></div>
+    <div id="slider">
+      <div class="slide slide1 fade-scroll">
+        <div class="slide-content fade-scroll">
+          <span>Vivekanad jayanti </span>
+        </div>
+      </div>
+      <div class="slide slide2">
+        <div class="slide-content fade-scroll">
+          <span>Salute to nation from the top</span>
+        </div>
+      </div>
+      <div class="slide slide3">
+        <div class="slide-content">
+          <span>Debate with Shweta ma'am</span>
+        </div>
+      </div>
+      <div class="slide slide4">
+        <div class="slide-content">
+          <span>Vivekanad jayanti view from top</span>
+        </div>
+      </div>
+      <div class="slide slide5">
+        <div class="slide-content">
+          <span>independence day</span>
+        </div>
+      </div> <div class="slide slide6">
+        <div class="slide-content">
+          <span>best moments</span>
+        </div>
+      </div> <div class="slide slide7">
+        <div class="slide-content">
+          <span>Physics time</span>
+        </div>
+      </div> <div class="slide slide8">
+        <div class="slide-content">
+          <span>Fun with saurabh sir</span>
+        </div>
+      </div> <div class="slide slide9">
+        <div class="slide-content">
+          <span>photo with alok sir and principal ma'am</span>
+        </div>
+      </div> <div class="slide slide10">
+        <div class="slide-content">
+          <span>Play time</span>
+        </div>
+      </div> <div class="slide slide11">
+        <div class="slide-content">
+          <span>lets make pyramid</span>
+        </div>
+      </div> <div class="slide slide12">
+        <div class="slide-content">
+          <span>kid's fun</span>
+        </div>
+      </div> <div class="slide slide13">
+        <div class="slide-content">
+          <span>time to debate</span>
+        </div>
+      </div> 
+      <!-- <div class="slide slide14">
+        <div class="slide-content">
+          <span>Image Four</span>
+        </div>
+      </div> -->
+       <!-- <div class="slide slide15">
+        <div class="slide-content">
+          <span>Image Four</span>
+        </div>
+      </div>  -->
+      <!-- <div class="slide slide16">
+        <div class="slide-content">
+          <span>Image Four</span>
+        </div>
+      </div>  -->
+      <!-- <div class="slide slide17">
+        <div class="slide-content">
+          <span>Image Four</span>
+        </div>
+      </div> -->
+       <!-- <div class="slide slide18">
+        <div class="slide-content">
+          <span>Image Four</span>
+        </div>
+      </div> -->
+       <!-- <div class="slide slide19">
+        <div class="slide-content">
+          <span>Image Four</span>
+        </div>
+      </div>  -->
+      <!-- <div class="slide slide20">
+        <div class="slide-content">
+          <span>Image Four</span>
+        </div>
+      </div> -->
+    </div>
+    <div id="arrow-right" class="arrow"></div>
+  </div>
+<!-- end of image slider -->
+<div>
+    <h1 class="principal-d fade-scroll" >FROM PRINCIPAL'S DESK</h2>
+        <div class="border " style=" left: 50%;">
+<img src="madam.jpg" alt="PRINCIPAL" class="principal fade-scroll">
+<h6 class="name fade-scroll">Anjana Bhadauria</h6>
+<div class="thoughts">
+  "Today the role of a school is not only to impart knowledge that encompasses the prescribed syllabi of the institution
+  but that of the world beyond the classroom . It is the role of the school to build and strengthen character that will not
+  crumble when tested in the crucible of adulthood , and to develope and qualities of good leadership that can be employed 
+  in the future for the creation of a superior nation . there is an old adage 'When planning for an year ,plant corn; when 
+  planning for a decade, plant trees; when planning for life, educate people.'AVM prides itself for the mental physical 
+  emotional and spiritual developement of its students. It is our consant endeavor to shape well rounded personalities 
+  thar will contribute positively to the world around them. For the developement of all round personality of our students
+  we work tirelessly to carefully assemble a diversified calendar of events each year that fits into the scheduled 
+  academic year. we aim to provide sufficient opportunities to eacg student to discover and understand themselves and face
+  and overcome challenges presented to them to make school life fulfilling and complete. the aim behind all our 
+  co-curricular and academic activities is not only to impart bookish knowledge but to provide the environment for young
+  minds to take wing. It is the role of a school to install desirable qualities in their students and this can be done 
+  when we provide appropriate situalions that require individuals to step up to be leaders when the need arises. At AVM 
+  we like to empower our children to help them to be the best they can be. Being comparatively a new school we had worked
+  very hard to be what we are today. I often tell our staff members abd students "If you are not number one you have to 
+  strive harder." ADARSH VIDYA MANDIR started with its foundation stone laid back in 2007. We had a humble beginning with
+  280 students but with hard work and dedication we have been able to make giant strides. Today we have over 2000 
+  students and one of the most modern infrastructures. We can today boast of one of the most modern science labs, 
+  computer lab , liabrary, activity rooms, and smart classrooms.In the past years the AVM has grown not only in strength 
+  and size but also in levels of excellence. "
+  
+</div>
+        </div>
+        <h1 class="toppers fade-scroll">      Toppers 2020       </h1>
+        <div class="line fade-scroll">
+
+        </div>
+        <div class="toppers-name ">
+          <h5 class=" tn fade-scroll">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+            <img src="madam.jpg" alt="photo" class="photo" >
+            <div class="quali">mnjglo</div>
+            <div class="quali">DOB: 12/2/70</div>
+
+          </h5>
+          <h5 class="  tn fade-scroll">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+<img src="madam.jpg" alt="photo" class="photo" >
+<div class="quali">mnjglo</div>
+<div class="quali">DOB: 12/2/70</div>
+          </h5>
+          <h5 class=" tn fade-scroll">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+<img src="madam.jpg" alt="photo" class="photo" >
+<div class="quali">mnjglo</div>
+<div class="quali">DOB: 12/2/70</div>
+          </h5> <h5 class="  tn fade-scroll ">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+            <img src="madam.jpg" alt="photo" class="photo" >
+            <div class="quali">mnjglo</div>
+            <div class="quali">DOB: 12/2/70</div>
+          </h5> <h5 class="  tn fade-scroll">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+<img src="madam.jpg" alt="photo" class="photo" >
+<div class="quali">mnjglo</div>
+<div class="quali">DOB: 12/2/70</div>
+          </h5> <h5 class="  tn fade-scroll">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+<img src="madam.jpg" alt="photo" class="photo" >
+<div class="quali">mnjglo</div>
+<div class="quali">DOB: 12/2/70</div>
+          </h5> <h5 class="  tn fade-scroll">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+            <img src="madam.jpg" alt="photo" class="photo" >
+            <div class="quali">mnjglo</div>
+            <div class="quali">DOB: 12/2/70</div>
+          </h5> <h5 class="  tn fade-scroll">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+<img src="madam.jpg" alt="photo" class="photo" >
+<div class="quali">mnjglo</div>
+<div class="quali">DOB: 12/2/70</div>
+          </h5> <h5 class="  tn fade-scroll">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+<img src="madam.jpg" alt="photo" class="photo" >
+<div class="quali">mnjglo</div>
+<div class="quali">DOB: 12/2/70</div>
+          </h5> <h5 class="  tn fade-scroll">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+<img src="madam.jpg" alt="photo" class="photo" >
+<div class="quali">mnjglo</div>
+<div class="quali">DOB: 12/2/70</div>
+          </h5>
+        </div>
+        <div class="members ">
+          <h5 class="council fade-scroll">
+            Council members
+          </h5>
+          <div class="border2 ">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+<img src="madam.jpg" alt="photo" class="align" >
+<div class="quali">mnjglo</div>
+<div class="quali">DOB: 12/2/70</div>
+          </div>
+          <div class="border2 ">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+<img src="madam.jpg" alt="photo" class="align" >
+<div class="quali">mnjglo</div>
+<div class="quali">DOB: 12/2/70</div>
+          </div> <div class="border2 ">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+<img src="madam.jpg" alt="photo" class="align" >
+<div class="quali">mnjglo</div>
+<div class="quali">DOB: 12/2/70</div>
+          </div> <div class="border2 ">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+<img src="madam.jpg" alt="photo" style="margin-left:auto;
+margin-right:auto; "class="align">
+<div class="quali">mnjglo</div>
+<div class="quali">DOB: 12/2/70</div>
+          </div> <div class="border2 ">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+<img src="madam.jpg" alt="photo" style="margin-left:auto;
+margin-right:auto; "class="align">
+<div class="quali">mnjglo</div>
+<div class="quali">DOB: 12/2/70</div>
+          </div> <div class="border2 ">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+<img src="madam.jpg" alt="photo" style="margin-left:auto;
+margin-right:auto;" class="align" >
+<div class="quali">mnjglo</div>
+<div class="quali">DOB: 12/2/70</div>
+          </div> <div class="border2 ">
+            <h4 style="text-align: center; justify-content: center; margin-top: 10px; font-family: '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Mrs Anjana Bhadauria</h4>
+<img src="madam.jpg" alt="photo" style="margin-left:auto;
+margin-right:auto; "class="align">
+<div class="quali">mnjglo</div>
+<div class="quali">DOB: 12/2/70</div>
+          </div> 
+        </div>
+</div>
+<h5 class="contact-us">
+    Contact Us
+    
+</h5>
+<div class="center">
+
+    <a href="https://www.facebook.com/AVM-Geetapuram-Unnao-311169832617238/"><img src="facebook.png"class="facebook" alt="facebook"></a>
+    <a href=""><img src="gmail.png" class="gmail"alt="gmail"></a>
+    <a href="tel:" ><img src="phone.png"class="phone" alt="phone"></a> 
+</div>
+<div class="phone-2" >
+    <img src="phone.png" class="phone-3" alt="phone"> <div class="phone-4">
+        123-456-789-1011
+    </div>
+</div>
+<footer class=" footer">
+    <p class="my-name">
+        Adarsh Vidya Mandir © 2020-21-All rights reserved| Developed by Prakhar Awasthi
+    </p> 
+    <!-- <a href="https://www.google.com/mail/"class="gmail-2"><img src="gmail3.png"  alt="gmail" class="gmail3" ></a> -->
+    <h6 class="request my-name">
+        Mail me on ( prakharaawasthi41509@gmail.com ) if you want such websites
+    </h6>
+    <div class="photo"><img src="prakhar.jpg" alt="prakhar" height="40px" width="40px" style="border-radius: 34px; display: block;
+        margin-left: auto;
+        margin-right: auto;
+        ">
+
+</div>
+</footer>
+
+<script src="resp2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+    
+    $(function() {
+        
+        var documentEl = $(document),
+            fadeElem = $('.fade-scroll');
+        
+        
+        documentEl.on('scroll', function() {
+            var currScrollPos = documentEl.scrollTop();
+            
+            fadeElem.each(function() {
+                var $this = $(this),
+                    elemOffsetTop = $this.offset().top;
+                if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
+            }); 
+        });
+        
+    });
+
+</script>
+
+</body>
+</html>

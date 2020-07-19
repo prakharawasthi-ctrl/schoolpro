@@ -1,0 +1,528 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.head{
+    display: flex;
+    flex-flow: row;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    background-color:#2662ad;
+    /* background-image: url("about-us.jpeg"); */
+    opacity: 0.9;
+    /* padding; */
+
+}
+/* .background-top{
+    /* background-image: url("about-us.jpeg"); }*/
+    
+    
+
+.img-nbgei{
+    padding-left: 224px;
+    padding-right: 2px;
+}
+.table{
+    
+    
+    display: flex;
+    flex-flow: row;
+    
+}
+.rightnav{
+    display: flex;
+
+    text-align: right;
+    justify-content: right;
+    margin-top: 16px;
+    /* padding-right: 1px; */
+}
+.logo{
+    width: 50px;
+    margin-top: 3px;
+    
+    border-radius: 50%;
+}
+.table li {
+    margin: 20px;
+    list-style: none;
+
+}
+.table li a{
+    text-decoration: none;
+    color:white;
+    margin: 6px;
+    cursor: pointer;
+}
+.table li a:hover{
+    color:orangered;
+}
+#search{
+    border: 2px solid white;
+    border-radius: 9px;
+}
+
+
+.video-background{
+    position: absolute;
+    
+    right: 0;
+    min-width: 100%;
+    min-height: 58px;
+
+    z-index: -2;
+
+}
+.btn-1{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 2px;
+    border-radius: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color:white;
+
+}
+.btn-1:hover{
+    background-color:orangered
+}
+ /* @media(min-aspect-ratio:16/9) 
+{
+    .video-background{
+        width: auto;
+        height: 100%;
+    }
+} */
+.box-main{
+    /* display: flex; */
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 250px;
+    padding-bottom: 394px;
+
+}
+.button-2{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white; 
+     padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+    margin-right: 2px;
+
+
+}.button-2:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+.button-3{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;   
+    font-size: 18px;
+    margin-left: 6px;
+}
+.button-3:hover{
+    background-color:orangered;  
+    cursor: pointer;
+    
+
+}
+.inside-boxmain{
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size:56px;
+}
+.boxmain-paragraph{
+    color: white;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+padding-bottom: 2px;
+font-size: 20px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* height: 500px; */
+}
+.online-class{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+     max-width: 2100px;
+     margin-right: 66px;
+     margin-left: 66px;
+     margin-top: 100px;
+    }
+    .online-img{
+     margin-top: 32px;
+     border: 1px solid black;
+     border-radius: 50%;
+
+    }
+    .online-head{
+        font-size: 40px;
+        font-weight: 400;
+        margin-right: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color:#8ceaff;
+        margin-bottom:55px;
+    }
+    .online-education{
+        color: grey;
+        font-size: 18px;
+        font-style: italic;
+
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .ofline-class{
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 100px;
+    }
+    .dis-ofline{
+        margin-left: 24px;
+        
+        margin-right: -3px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .ofline-education{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        color:#cdf52f ;
+        margin-right: 43px;
+        margin-left: 34px;
+        
+    }
+    .ofline-services{
+        margin-left: 2px;
+        margin-right: 2px;   border: 1px solid black;
+        border-radius: 10px;
+        /* ppadding-bottom: -2px; */
+    }
+    .doubt-sec{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 2100px;
+        margin-right: 66px;
+        margin-left: 66px;
+        margin-top: 100px;
+       }
+       .doubts{
+           font-size: 40px;
+           font-weight: 400;
+           margin-right: 15px;
+           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           color:#ffcc8c;
+       }
+       .doubts-dis{margin-right: 2px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       } 
+       .sec-skill{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 100px;
+        
+    }
+    .sill-dis{
+        margin-left: 24px;
+        
+        margin-right: -3px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .skills{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        color: #ffff00a6 ;
+        margin-right: 43px;
+        margin-left: 34px;
+        
+    }
+    .skill-developement{
+       border: 1px solid black;
+       border-radius: 10px;
+       
+       /* padding-bottom: -2px; */
+    }
+    .doubts-img{
+        border: 1px solid black;
+        border-radius: 10px;
+        /* padding-bottom: -2px; */
+    }
+    /* .online-img{
+
+        border: 1px solid black;
+        border-radius: 50%;
+        /* padding-bottom: -2px; */
+        
+    /* }  */
+    .contact{
+        background-color:grey;
+        z-index: -2;
+    }
+ /* .contact-div{
+        display: flex;
+        align-items: center;
+         justify-content: center;
+         margin: auto; 
+         margin-right: 460px; 
+         margin-left: 460px; 
+         border: 1px solid white; 
+         border-radius: 5px; 
+        width: 100%;
+         max-width: 1000px; 
+        padding: 20px;
+    }.contact-concern{ */
+        /* display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin: auto; */
+        /* margin-right: 460px; */
+        /* margin-left: 460px; */
+        /* border: 1px solid white; */
+        /* border-radius: 5px; */
+        /* width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        height: 20px; */
+    /* }.contact-password{ */
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        /* margin: auto; */
+        /* margin-right: 460px; */
+        /* margin-left: 460px; */
+        /* border: 1px solid white; */
+        /* border-radius: 5px; */
+        /* width: 100%;
+        /* max-width: 1000px; */
+      /* padding-top: 20px; */ 
+    /* }.contact-mail{ */
+        /* display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin: 2px; */
+        /* margin-right: 460px; */
+        /* margin-left: 460px; */
+        /* border: 1px solid white; */
+        /* border-radius: 5px; */
+        /* width: 100%;
+        /* max-width: 1000px; */
+        /* padding-bottom: 0px; */ 
+    /* }  */ 
+/*     
+    .contact-div{
+        color: white;
+        padding-bottom: 20px;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+    } */
+    @media only screen and (max-width:600px){
+        .head{
+            flex-direction: column;
+            display: flex;
+            text-align: center;
+            
+            transition: all 0.7s ease-out;
+    
+        }
+        .rightnav{
+            text-align: center;
+        }
+
+    .table{
+        flex-direction: column;
+       
+    }
+    .box-main{
+        padding-top: 200px;
+        padding-bottom: 153px;
+    }
+    .inside-boxmain{
+        font-size: 50px;
+    }
+    .boxmain-paragraph{
+        font-size: 22px;
+    }
+    .online-class{
+        flex-direction: column;
+    }
+    .ofline-class{
+
+        flex-direction: column;
+    }
+    .doubt-sec{
+        flex-direction: column;
+    }
+    .sec-skill{
+        flex-direction: column;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 24px;
+        top: 15px;
+    }
+
+ .line3{
+      width: 33px;
+    background-color:white;
+    height: 4px;
+    margin: 3px 3px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.h-nav-resp{
+    height: 48px;
+}
+ .v-class-resp{
+     opacity: 0;
+ }        
+
+
+
+}
+.name{text-align: center;justify-content: center;display: flex;
+    margin-top: 2px;
+    padding-left: 66px;
+    padding-right: 66px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 2px;
+    padding-top: 2px;
+    /* margin-left:50%; */
+     /* margin-right: 50%; */
+     margin: auto;
+}
+.e-mail{text-align: center;justify-content: center;display: flex;
+    padding-left: 66px;
+    padding-right: 66px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-top: 2px;
+    /* margin-left:50%;  */
+    /* margin-right: 50%; */
+     margin: auto;
+}
+.password{text-align: center;justify-content: center;display: flex;
+    padding-left: 66px;
+    padding-right: 66px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-top: 2px;
+    /* margin-left:50%;  */
+    /* margin-right: 50%; */
+     margin: auto;
+}
+.concern{text-align: center;justify-content: center;display: flex;
+    padding-left: 66px;
+    padding-right: 66px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-bottom: 68px;
+    /* margin-left: 50%; */
+    /* margin-right: 50%; */
+     margin: auto;
+}
+.submit{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    background-color:  #2662ad;
+    border: 2px solid white;
+    padding: 6px;
+    border-radius: 8px;
+}
+.submit:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+.contact-us{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+color:white;
+box-shadow: 0px 12px 75px black;
+}
+.center{
+text-align: center;
+padding-bottom: 40px;
+
+}
+.phone{
+    height: 30px;padding: 8px;
+
+}
+.gmail{
+    height: 30px;padding: 8px;
+}
+.facebook{
+    height: 30px;padding: 8px;
+
+}
+.phone:hover{
+cursor: pointer;
+color: orangered;
+}
+.gmail:hover{
+   cursor: pointer;
+   color: orangered;
+}
+.facebook:hover{
+    cursor: pointer;
+    color: orangered;
+}
+.phone-2{
+    display:flex;
+     max-width:1304px ;
+
+}
+.phone-3{
+    height: 20px;
+    
+}
+.phone-4{
+    color:#44251b;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer{
+    background-color: black;
+    
+}
+.my-name{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.gmail-2{
+    height: 10px;
+}
